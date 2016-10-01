@@ -9,6 +9,7 @@ The difference is we'd ask a page object to provide needed page details
 instead of retrieving them ourselves in the context file:
 
     .. code-block:: php
+        <?php
 
         use Behat\Behat\Context\Context;
 
@@ -37,6 +38,7 @@ instead of retrieving them ourselves in the context file:
 Our page object could look like the following:
 
     .. code-block:: php
+        <?php
 
         namespace Page;
 
@@ -56,6 +58,7 @@ matchers available through the
 `expect() helper <https://github.com/BossaConsulting/phpspec2-expect>`_:
 
     .. code-block:: php
+        <?php
 
         /**
          * @Then /^(?:|I )should not be able to enrol to (?:|the )"(?P<conferenceName>[^"]*)" conference$/
